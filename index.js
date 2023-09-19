@@ -114,3 +114,39 @@ function definirMaiorEMenor(arr) {
 
 definirMaiorEMenor(arrayOriginal);
 
+// Desafios
+// 1.
+
+let numeroPrimeiroJogador = Number(prompt("Primeiro jogador, insira um número"));
+
+function imprimirPlay (){
+  console.log('Vamos jogar')
+}
+
+let chuteUsuario = Number(prompt('Segundo jogador, chute um número'));
+let contador = 0;
+
+function descobrirNumero (num){
+    while (chuteUsuario !== numeroPrimeiroJogador){
+    if (chuteUsuario < numeroPrimeiroJogador){
+      console.log(`O número chutado foi ${chuteUsuario}`);
+      console.log('Errou, o número é maior');
+      chuteUsuario = Number(prompt('Segundo jogador, chute outro número'));
+      contador += 1;
+
+    } if (chuteUsuario > numeroPrimeiroJogador){
+      console.log(`O número chutado foi ${chuteUsuario}`);
+      console.log('Errou, o número é menor');
+      chuteUsuario = Number(prompt('Segundo jogador, chute outro número'));
+      contador += 1;
+
+    } if (chuteUsuario === numeroPrimeiroJogador){
+      console.log(`O número chutado foi ${chuteUsuario}`);
+      console.log('Acertou!');
+      contador += 1;
+      console.log(`Número de tentativas ${contador}`);
+    }
+  }
+}
+imprimirPlay();
+descobrirNumero(numeroPrimeiroJogador);
