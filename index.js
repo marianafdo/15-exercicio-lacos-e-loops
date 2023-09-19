@@ -150,3 +150,39 @@ function descobrirNumero (num){
 }
 imprimirPlay();
 descobrirNumero(numeroPrimeiroJogador);
+
+
+// 2.
+/*let numeroDoPc = Math.floor((Math.random() * 10) + 1);
+
+function imprimirPlay (){
+  console.log('Vamos jogar')
+}
+
+let chuteUsuario = Number(prompt('Jogador, chute um número'));
+let contador = 0;
+
+function descobrirNumero (num){
+    while (chuteUsuario !== numeroDoPc){
+    if (chuteUsuario < numeroDoPc){
+      console.log(`O número chutado foi: ${chuteUsuario}`);
+      console.log('Errou, o número é maior');
+      chuteUsuario = Number(prompt('Jogador, chute outro número'));
+      contador += 1;
+
+    } if (chuteUsuario > numeroDoPc){
+      console.log(`O número chutado foi: ${chuteUsuario}`);
+      console.log('Errou, o número é menor');
+      chuteUsuario = Number(prompt('Jogador, chute outro número'));
+      contador += 1;
+
+    } if (chuteUsuario === numeroDoPc){
+      console.log(`O número chutado foi: ${chuteUsuario}`);
+      console.log('Acertou!');
+      contador += 1;
+      console.log(`Número de tentativas: ${contador}`);
+    }
+  }
+}
+imprimirPlay();
+descobrirNumero(numeroDoPc); */
